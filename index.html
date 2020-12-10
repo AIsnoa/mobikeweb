@@ -20,6 +20,7 @@
 <body>
     
     <div class="head-wrap">
+        
         <!-- 轮播图  -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -37,7 +38,31 @@
                 </div>
             </div>    
         </div>
+
+
+        <!-- logo 和 导航模块-->
+        <div class="global-navigation-wrap">
+            <div class="container-md">
+                <!-- logo-->
+                <div class="logo-links">
+                    <a href="#">
+                        
+                    </a>
+                </div>
+                
+                <!-- 导航 -->
+                <ul class="nav-links"></ul>
+
+                <!-- 手机导航 -->
+                <ul class="nav-links-mobile"></ul>
+
+            </div>
+        </div>
+
+
     </div>
+
+
     <script src="js/swiper-bundle.min.js"></script>
     <script>        
         var mySwiper = new Swiper ('.swiper-container', {
@@ -49,6 +74,7 @@
           },                            //自动切换 
           effect : 'fade',              //淡入淡出效果
         })        
-        </script>
+    </script>
+
 </body>
 </html>
