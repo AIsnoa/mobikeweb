@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 编码格式  可视区域窗口  描述  关键字 搜索引擎优化 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="共享单车,城市交通,绿色出行,物联网">
+    <meta name="keywords" content="共享单车,城市交通,绿色出行,物联网"> 
+    <!-- 页面的标题 -->
+    <title>Mobike</title>
+    <!-- 标题前面的图标 -->
+    <link rel="shortcut icon" href="https://mobike.com/cn/favicon.png" type="image/x-icon">
+    <!-- link 用于 js 性能优化 -->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    
+    <div class="head-wrap">
+        <!-- 轮播图  -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero-bg" style="background-image: url(images/hero-bg-5.jpg);">
+                    </div>  
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-bg" style="background-image: url(images/hero-bg-4.jpg);">
+                    </div>  
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-bg" style="background-image: url(images/hero-bg-7.jpg);">
+                    </div>  
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+          loop: true, // 循环模式选项  
+          autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+          },                            //自动切换 
+          effect : 'fade',              //淡入淡出效果
+        })        
+        </script>
+</body>
+</html>
