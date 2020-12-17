@@ -1,3 +1,13 @@
+/* 层级样式设计 */
+
+/* 版心公用 */
+.container-md{
+    width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: transparent;
+}
 html,
 body,
 .head-wrap,
@@ -13,4 +23,135 @@ body,
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    color: #b4b4b4;
 }
+
+.header-wrap{
+    position: relative;
+}
+
+/* logo */
+.global-navigation-wrap{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 100%;
+    padding-top: 1vmax;    /* 响应式布局 */
+    padding-bottom: 1vmax;
+}
+
+.logo-links{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+/* nav */
+.nav-links{
+    float: right;
+}
+
+.nav-links li{
+    position: relative;
+    float: left;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.nav-links li a{
+    display: block;
+    padding: 8px 20px;
+    color: #fff;
+}
+
+.nav-links li .nav-links-proudct{
+    /* 去掉产品的小手 */    
+    cursor: default;
+}
+
+.nav-links-layer{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 240px;
+    height: 204px;
+    padding-top: 15px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.nav-links-layer::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    top: -5px;              /* 通过调节相关细节 */
+    left: 20px;
+    border-width: 10px;
+    border-style: solid solid solid solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.nav-links li:hover .nav-links-layer{
+    display: block;
+}
+
+/* 文字 */
+.hero-landing{
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 146px;
+    margin-top: -73px;
+    animation: color 5s ease infinite alternate; /* 交替运动 */
+}
+
+.hero-txt{
+    margin-bottom: 20px;
+    font-size: 420%;
+    font-weight: bold;
+}
+
+.hero-btn{
+    color: #fff;
+    padding: 14px 26px;
+    font-size: 22px;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 4px;
+}
+
+@keyframes color{
+     0%{color: #fff;}
+     50%{color: #fff;}
+     51%{color: #000;}
+     100%{color: #000;}
+}
+
+/* 新闻模块 */
+.new-warp {
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+    font-size: 16px;
+}
+
+.news-warp span{
+    /* linear-gLIAradient 线性渐变 CSS3 */
+    background: linear-gradient(to bottom,#ec614f 0%, #ff2e2e 100%);
+    border-radius: 4px;
+}
+
+.hero-product{
+    width: 25%;
+    background-repeat: no-repeat;
+}
+
+
