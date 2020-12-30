@@ -133,8 +133,8 @@ body,
 }
 
 /* 新闻模块 */
-.new-warp {
-    z-index: 99;
+.news-wrap {
+    z-index: 2;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -145,15 +145,79 @@ body,
     font-size: 16px;
 }
 
-.news-warp span{
-    /* linear-gLIAradient 线性渐变 CSS3 */
+.news-wrap span{
+    /* linear-  线性渐变 CSS3 */
     background: linear-gradient(to bottom,#ec614f 0%, #ff2e2e 100%);
+    padding: 0 10px;
     border-radius: 4px;
 }
 
-.hero-product{
-    width: 25%;
-    background-repeat: no-repeat;
+.hero-wrap{
+    margin-left: -2px;
+    margin-top: 2px;
 }
 
+.hero-wrap{
+    margin-left: -2px;
+    margin-top: 2px;
+}
+.hero-product {
+    width: 25%;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: conver;
+    float: left;
+    border-left: 2px solid #fff;
+    /*  只把 border 和 padding 值计算进去 */
+    box-sizing:border-box;
+}
 
+.hero-product h3{
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    padding-top: 60px;
+
+}
+
+h2 {
+    font-weight: 600;
+}
+
+p{
+    font-size: 14px;
+}
+.meta-links{
+    border-bottom: 1px solid #000;
+}
+
+.meta-link{
+    float: left;
+    width: 33.33%;
+}
+.meta-link .icon{
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    background-repeat:  no-repeat;
+    background-position: center;
+}
+.meta-link .txt{
+    display: inline-block;
+    text-align: left;
+}
+
+.meta-link:nth-child(1){
+    text-align: left;
+    background-color: greenyellow;
+}
+
+.meta-link:nth-child(2){
+    text-align: center;
+    background-color: goldenrod;
+}
+.meta-link:nth-child(3){
+    text-align: right;
+    background-color: thistle;
+}
