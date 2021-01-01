@@ -195,16 +195,23 @@ p{
 .meta-link{
     float: left;
     width: 33.33%;
+    padding: 30px 0;
 }
 .meta-link .icon{
     display: inline-block;
+    vertical-align: middle;
+
     width:50px;
     height: 50px;
     background-repeat:  no-repeat;
     background-position: center;
+    background-size: contain; 
+    /* 留白 */
+    /* 等比例缩放会超出的情况 */
 }
 .meta-link .txt{
     display: inline-block;
+    vertical-align: middle;
     text-align: left;
 }
 
@@ -220,4 +227,30 @@ p{
 .meta-link:nth-child(3){
     text-align: right;
     background-color: thistle;
+}
+
+/* PAD*/
+
+@media screen and (max-width: 1080px){
+    .nav-links{
+        display: none;
+    }
+    .container-md{
+        width: 100%;
+    }
+    .hero-product{
+        width:50%;
+        margin-bottom: 2px;
+    }
+}
+/* 手机端*/
+@media screen and (max-width: 640px){
+    .hero-product{
+        width:100%;
+    }
+    .meta-link{
+        width:100%;
+        padding: 10px 0;
+    }
+    .meta-link:nth-child(2),.meta-link:nth-child(3){text-align: left;}
 }
